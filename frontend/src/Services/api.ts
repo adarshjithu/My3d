@@ -14,7 +14,7 @@ export const errorHandler = (error: any) => {
     return Promise.reject("An unexpected error occured");
 };
 
-const baseURL = "http://localhost:3000";
+const baseURL = "http://13.201.20.66:3000";
 const API = axios.create({
     baseURL: baseURL,
     withCredentials: true,
