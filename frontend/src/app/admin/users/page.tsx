@@ -5,7 +5,7 @@ import Table from '@/Components/Admin/Table/Table'
 
 import React from 'react'
 
-function page() {
+function Page() {
   return (
     <div>
         <Breadcrumb pageName='Users'/>
@@ -18,4 +18,4 @@ function page() {
   )
 }
 
-export default page
+export default Page

@@ -2,7 +2,7 @@ import BannerTable from '@/Components/Admin/Banner/BannerTable'
 import Breadcrumb from '@/Components/Admin/Breadcrumb/Breadcrumb'
 import React from 'react'
 
-function page() {
+function Page() {
   return (
     <div>
       <Breadcrumb pageName='Banner' root='Admin'/>
@@ -11,4 +11,4 @@ function page() {
   )
 }
 
-export default page
+export default Page

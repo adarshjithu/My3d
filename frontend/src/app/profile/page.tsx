@@ -14,7 +14,7 @@ import React, { useEffect, useState } from "react";
 import toast from "react-hot-toast";
 import { useDispatch } from "react-redux";
 
-function page() {
+function Profile() {
     const [activeTab, setActiveTab] = useState("profile");
     const dispatch = useDispatch();
     const router = useRouter();
@@ -51,4 +51,4 @@ function page() {
     );
 }
 
-export default page;
+export default Profile;

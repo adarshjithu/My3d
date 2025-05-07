@@ -1,10 +1,10 @@
 import PageLoading from '@/Components/User/Loading/PageLoading'
 import React from 'react'
 
-function loading() {
+function Loading() {
   return (
   <PageLoading/>
   )
 }
 
-export default loading
+export default Loading

@@ -3,7 +3,7 @@ import CategoryFilter from '@/Components/Admin/Category/Filter'
 import CategoryManagement from '@/Components/Admin/Table/CategoryTable'
 import React from 'react'
 
-function page() {
+function Page() {
   return (
     <div>
       <Breadcrumb pageName='Category' root='ProductManagement'/>
@@ -13,4 +13,4 @@ function page() {
   )
 }
 
-export default page
+export default Page

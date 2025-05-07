@@ -9,7 +9,7 @@ import { getProductById } from "@/Services/userServices";
 import React, { use, useEffect, useState } from "react";
 import toast from "react-hot-toast";
 
-function page({ params }: { params: Promise<{ productId: string }>}) {
+function Page({ params }: { params: Promise<{ productId: string }>}) {
     const { productId } = use(params);
     const [images, setImages] = useState<any>([]);
     const [product, setProduct] = useState<any>();
@@ -51,4 +51,4 @@ function page({ params }: { params: Promise<{ productId: string }>}) {
     );
 }
 
-export default page;
+export default Page;

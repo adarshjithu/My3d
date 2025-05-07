@@ -9,7 +9,7 @@ import { useRouter } from "next/navigation";
 import React, { useEffect, useState } from "react";
 import toast from "react-hot-toast";
 
-function page({ params }: { params: { id: string } }) {
+function Page({ params }: { params: { id: string } }) {
     const [modal, setModal] = useState(false);
     const [userId, setUserId] = useState<string>("");
     const [loading, setLoading] = useState(false);
@@ -126,4 +126,4 @@ function page({ params }: { params: { id: string } }) {
     );
 }
 
-export default page;
+export default Page;

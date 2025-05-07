@@ -2,7 +2,7 @@ import Breadcrumb from '@/Components/Admin/Breadcrumb/Breadcrumb'
 import ProductsTable from '@/Components/Admin/Products/ProductsTable'
 import React from 'react'
 
-function page({params}:any) {
+function Page({params}:any) {
   return (
     <div>
         <Breadcrumb pageName='Products' root='Product Management'/>
@@ -11,4 +11,4 @@ function page({params}:any) {
   )
 }
 
-export default page
+export default Page

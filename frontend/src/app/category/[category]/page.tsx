@@ -7,7 +7,7 @@ import { getProductByCategory } from "@/Services/userServices";
 import React, { useEffect, useState } from "react";
 import toast from "react-hot-toast";
 
-function page({ params }: any) {
+function Page({ params }: any) {
     const [products, setProducts] = useState<IProduct[]>([]);
     const [loading, setLoading] = useState(false);
     useEffect(() => {
@@ -33,4 +33,4 @@ function page({ params }: any) {
     );
 }
 
-export default page;
+export default Page;

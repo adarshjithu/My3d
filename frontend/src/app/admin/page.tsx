@@ -2,7 +2,7 @@ import Dashboard from "@/Components/Admin/Dashboard/Dashboard";
 import Sidebar from "@/Components/Admin/Sidebar/Sidebar";
 import React from "react";
 
-function page() {
+function Page() {
     return (
           <div className="w-[100%] h-[100%] bg-[red]">
            
@@ -10,4 +10,4 @@ function page() {
     );
 }
 
-export default page;
+export default Page;

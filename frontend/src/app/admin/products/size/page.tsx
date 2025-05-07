@@ -2,7 +2,7 @@ import Breadcrumb from '@/Components/Admin/Breadcrumb/Breadcrumb'
 import SizeTable from '@/Components/Admin/Table/SizeTable'
 import React from 'react'
 
-function page() {
+function Page() {
   return (
     <div>
       <Breadcrumb pageName='Size' root='ProductManagement'/>
@@ -11,4 +11,4 @@ function page() {
   )
 }
 
-export default page
+export default Page
