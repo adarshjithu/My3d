@@ -1,4 +1,4 @@
-import { NextConfig } from 'next'
+import { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
   eslint: {
@@ -7,26 +7,17 @@ const nextConfig: NextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
-  // Add these important configurations:
-  output: process.env.NEXT_OUTPUT_MODE === 'export' ? 'export' : undefined,
-  images: {
-    unoptimized: process.env.NEXT_OUTPUT_MODE === 'export', // Required for static exports
-    domains: [], // Add any external image domains here
-  },
-  // For API routes (if using them)
-  api: {
-    bodyParser: {
-      sizeLimit: '1mb',
-    },
-    externalResolver: true,
-  },
-  // Enable React Strict Mode
-  reactStrictMode: true,
-  // For internationalized routing (if needed)
-  i18n: process.env.NEXT_PUBLIC_ENABLE_I18N === 'true' ? {
-    locales: ['en', 'es'], // customize as needed
-    defaultLocale: 'en',
-  } : undefined,
-}
+  // Modern configuration (Next.js 13.4+)
+  output: 'standalone',
+  distDir: '.next',
+  
+  // For App Router (no longer experimental)
+  appDir: true, // Move this to top level
+  
+  // Remove the old experimental block
+  // experimental: {
+  //   appDir: true, ← Remove this
+  // },
+};
 
-export default nextConfig
+export default nextConfig;
