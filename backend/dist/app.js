@@ -17,10 +17,14 @@ exports.server = server;
 app.use(express_1.default.json());
 app.use((0, cookie_parser_1.default)());
 app.use((0, cors_1.default)({
-    origin: ["http://localhost:3001", "http://localhost:3000", 'https://test-adarsh-git-main-shijo-thomas-projects.vercel.app'],
+    origin: [
+        'http://localhost:3000', // for local development
+        'https://my-3d-pic-frontend.vercel.app', // your Vercel domain
+        'https://yourdomain.com', // replace with actual production domain
+    ],
     methods: ["GET", "POST", "PUT", "DELETE", "PATCH"],
     allowedHeaders: ["Content-Type", "Authorization"],
-    credentials: true,
+    credentials: true, // If you need to send cookies with the request
 }));
 app.use("/admin", adminRoutes_1.default);
 app.use('/api', userRoutes_1.default);
